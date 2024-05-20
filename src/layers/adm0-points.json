@@ -165,7 +165,7 @@
     "source-layer": "adm0_points",
     "minzoom": 4,
     "maxzoom": 8,
-    "filter": ["all", ["==", "status_cd", 1], ["<=", "area", 1e11]],
+    "filter": ["all", ["==", "status_cd", 1], ["<=", "area_km", 100000]],
     "layout": {
       "text-anchor": "center",
       "text-field": "{adm0_name}",
@@ -195,8 +195,8 @@
     "filter": [
       "all",
       ["==", "status_cd", 1],
-      ["<=", "area", 1e12],
-      [">", "area", 1e11]
+      ["<=", "area_km", 1000000],
+      [">", "area_km", 100000]
     ],
     "layout": {
       "text-anchor": "center",
@@ -224,7 +224,7 @@
     "source-layer": "adm0_points",
     "minzoom": 2,
     "maxzoom": 6,
-    "filter": ["all", ["==", "status_cd", 1], [">", "area", 1e12]],
+    "filter": ["all", ["==", "status_cd", 1], [">", "area_km", 1000000]],
     "layout": {
       "text-anchor": "center",
       "text-field": "{adm0_name}",

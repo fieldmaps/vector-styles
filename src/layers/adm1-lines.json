@@ -5,7 +5,7 @@
     "source": "admin",
     "source-layer": "adm1_lines",
     "minzoom": 8,
-    "filter": ["<=", "area", 2e7],
+    "filter": ["<=", "area_km", 20],
     "layout": { "line-join": "round" },
     "paint": {
       "line-color": "{adm1-color}",
@@ -24,7 +24,7 @@
     "source": "admin",
     "source-layer": "adm1_lines",
     "minzoom": 7,
-    "filter": ["all", ["<=", "area", 7e7], [">", "area", 2e7]],
+    "filter": ["all", ["<=", "area_km", 70], [">", "area_km", 20]],
     "layout": { "line-join": "round" },
     "paint": {
       "line-color": "{adm1-color}",
@@ -43,7 +43,7 @@
     "source": "admin",
     "source-layer": "adm1_lines",
     "minzoom": 6,
-    "filter": ["all", ["<=", "area", 5e8], [">", "area", 7e7]],
+    "filter": ["all", ["<=", "area_km", 500], [">", "area_km", 70]],
     "layout": { "line-join": "round" },
     "paint": {
       "line-color": "{adm1-color}",
@@ -62,7 +62,7 @@
     "source": "admin",
     "source-layer": "adm1_lines",
     "minzoom": 5,
-    "filter": ["all", ["<=", "area", 1e9], [">", "area", 5e8]],
+    "filter": ["all", ["<=", "area_km", 1000], [">", "area_km", 500]],
     "layout": { "line-join": "round" },
     "paint": {
       "line-color": "{adm1-color}",
@@ -81,7 +81,7 @@
     "source": "admin",
     "source-layer": "adm1_lines",
     "minzoom": 4,
-    "filter": ["all", ["<=", "area", 6e9], [">", "area", 1e9]],
+    "filter": ["all", ["<=", "area_km", 6000], [">", "area_km", 1000]],
     "layout": { "line-join": "round" },
     "paint": {
       "line-color": "{adm1-color}",
@@ -100,7 +100,7 @@
     "source": "admin",
     "source-layer": "adm1_lines",
     "minzoom": 3,
-    "filter": ["all", ["<=", "area", 6e10], [">", "area", 6e9]],
+    "filter": ["all", ["<=", "area_km", 60000], [">", "area_km", 6000]],
     "layout": { "line-join": "round" },
     "paint": {
       "line-color": "{adm1-color}",
@@ -119,7 +119,7 @@
     "source": "admin",
     "source-layer": "adm1_lines",
     "minzoom": 2,
-    "filter": ["all", ["<=", "area", 1.8e11], [">", "area", 6e10]],
+    "filter": ["all", ["<=", "area_km", 180000], [">", "area_km", 60000]],
     "layout": { "line-join": "round" },
     "paint": {
       "line-color": "{adm1-color}",
@@ -138,7 +138,7 @@
     "source": "admin",
     "source-layer": "adm1_lines",
     "minzoom": 1,
-    "filter": ["all", ["<=", "area", 1e12], [">", "area", 1.8e11]],
+    "filter": ["all", ["<=", "area_km", 1000000], [">", "area_km", 180000]],
     "layout": { "line-join": "round" },
     "paint": {
       "line-color": "{adm1-color}",
@@ -156,7 +156,7 @@
     "type": "line",
     "source": "admin",
     "source-layer": "adm1_lines",
-    "filter": [">", "area", 1e12],
+    "filter": [">", "area_km", 1000000],
     "layout": { "line-join": "round" },
     "paint": {
       "line-color": "{adm1-color}",

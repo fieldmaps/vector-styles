@@ -6,7 +6,7 @@
     "source-layer": "adm2_points",
     "minzoom": 11,
     "maxzoom": 15,
-    "filter": ["<=", "area", 2e7],
+    "filter": ["<=", "area_km", 20],
     "layout": {
       "text-anchor": "center",
       "text-field": "{adm2_name}",
@@ -33,7 +33,7 @@
     "source-layer": "adm2_points",
     "minzoom": 10,
     "maxzoom": 14,
-    "filter": ["all", ["<=", "area", 2e8], [">", "area", 2e7]],
+    "filter": ["all", ["<=", "area_km", 200], [">", "area_km", 20]],
     "layout": {
       "text-anchor": "center",
       "text-field": "{adm2_name}",
@@ -60,7 +60,7 @@
     "source-layer": "adm2_points",
     "minzoom": 9,
     "maxzoom": 13,
-    "filter": ["all", ["<=", "area", 8e8], [">", "area", 2e8]],
+    "filter": ["all", ["<=", "area_km", 800], [">", "area_km", 200]],
     "layout": {
       "text-anchor": "center",
       "text-field": "{adm2_name}",
@@ -87,7 +87,7 @@
     "source-layer": "adm2_points",
     "minzoom": 8,
     "maxzoom": 12,
-    "filter": ["all", ["<=", "area", 3e9], [">", "area", 8e8]],
+    "filter": ["all", ["<=", "area_km", 3000], [">", "area_km", 800]],
     "layout": {
       "text-anchor": "center",
       "text-field": "{adm2_name}",
@@ -114,7 +114,7 @@
     "source-layer": "adm2_points",
     "minzoom": 7,
     "maxzoom": 11,
-    "filter": ["all", ["<=", "area", 2.3e10], [">", "area", 3e9]],
+    "filter": ["all", ["<=", "area_km", 23000], [">", "area_km", 3000]],
     "layout": {
       "text-anchor": "center",
       "text-field": "{adm2_name}",
@@ -141,7 +141,7 @@
     "source-layer": "adm2_points",
     "minzoom": 6,
     "maxzoom": 10,
-    "filter": ["all", ["<=", "area", 1e11], [">", "area", 2.3e10]],
+    "filter": ["all", ["<=", "area_km", 100000], [">", "area_km", 23000]],
     "layout": {
       "text-anchor": "center",
       "text-field": "{adm2_name}",
@@ -168,7 +168,7 @@
     "source-layer": "adm2_points",
     "minzoom": 5,
     "maxzoom": 9,
-    "filter": [">", "area", 1e11],
+    "filter": [">", "area_km", 100000],
     "layout": {
       "text-anchor": "center",
       "text-field": "{adm2_name}",

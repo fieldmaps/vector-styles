@@ -5,7 +5,7 @@
     "source": "admin",
     "source-layer": "adm2_lines",
     "minzoom": 9,
-    "filter": ["<=", "area", 2e7],
+    "filter": ["<=", "area_km", 20],
     "layout": { "line-join": "round" },
     "paint": {
       "line-color": "{adm1-color}",
@@ -25,7 +25,7 @@
     "source": "admin",
     "source-layer": "adm2_lines",
     "minzoom": 8,
-    "filter": ["all", ["<=", "area", 2e8], [">", "area", 2e7]],
+    "filter": ["all", ["<=", "area_km", 200], [">", "area_km", 20]],
     "layout": { "line-join": "round" },
     "paint": {
       "line-color": "{adm1-color}",
@@ -45,7 +45,7 @@
     "source": "admin",
     "source-layer": "adm2_lines",
     "minzoom": 7,
-    "filter": ["all", ["<=", "area", 8e8], [">", "area", 2e8]],
+    "filter": ["all", ["<=", "area_km", 800], [">", "area_km", 200]],
     "layout": { "line-join": "round" },
     "paint": {
       "line-color": "{adm1-color}",
@@ -65,7 +65,7 @@
     "source": "admin",
     "source-layer": "adm2_lines",
     "minzoom": 6,
-    "filter": ["all", ["<=", "area", 3e9], [">", "area", 8e8]],
+    "filter": ["all", ["<=", "area_km", 3000], [">", "area_km", 800]],
     "layout": { "line-join": "round" },
     "paint": {
       "line-color": "{adm1-color}",
@@ -85,7 +85,7 @@
     "source": "admin",
     "source-layer": "adm2_lines",
     "minzoom": 5,
-    "filter": ["all", ["<=", "area", 2.3e10], [">", "area", 3e9]],
+    "filter": ["all", ["<=", "area_km", 23000], [">", "area_km", 3000]],
     "layout": { "line-join": "round" },
     "paint": {
       "line-color": "{adm1-color}",
@@ -105,7 +105,7 @@
     "source": "admin",
     "source-layer": "adm2_lines",
     "minzoom": 4,
-    "filter": ["all", ["<=", "area", 1e11], [">", "area", 2.3e10]],
+    "filter": ["all", ["<=", "area_km", 100000], [">", "area_km", 23000]],
     "layout": { "line-join": "round" },
     "paint": {
       "line-color": "{adm1-color}",
@@ -125,7 +125,7 @@
     "source": "admin",
     "source-layer": "adm2_lines",
     "minzoom": 3,
-    "filter": [">", "area", 1e11],
+    "filter": [">", "area_km", 100000],
     "layout": { "line-join": "round" },
     "paint": {
       "line-color": "{adm1-color}",

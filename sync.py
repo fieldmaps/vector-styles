@@ -22,3 +22,7 @@ def upload(src, dest):
 if __name__ == "__main__":
     # upload(cwd / "dist/fonts", "r2://fieldmaps-data/fonts")
     upload(cwd / "dist/styles", "r2://fieldmaps-data/styles")
+    upload(
+        cwd / "dist/styles/light",
+        "r2://fieldmaps-data/esri/VectorTileServer/resources/styles",
+    )
